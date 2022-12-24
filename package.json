@@ -1,0 +1,53 @@
+{
+  "name": "Back-Deporte",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "SET DEBUG=app:* & nodemon index",
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^9.1.1",
+    "app-root-path": "^3.0.0",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mysql": "^2.18.1",
+    "node-fetch": "^2.6.1",
+    "passport": "^0.4.1",
+    "passport-http": "^0.3.0",
+    "passport-jwt": "^4.0.0",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.1",
+    "xml-fetch": "^1.1.91",
+    "xml2js": "^0.4.23",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.4",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,json,md,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "~\\logsxd\\.688ca939432bd26635b9e6d0fd7e4a8d719fb967-audit.json",
+    "files": [
+        {
+            "date": 1638221498474,
+            "name": "~\\logsxd\\application-2021-11-29.log",
+            "hash": "3784b3d66133155e6522c8d8c005bea9"
+        },
+        {
+            "date": 1638288467099,
+            "name": "~\\logsxd\\application-2021-11-30.log",
+            "hash": "73335604de7790f27acd671aaf7c52e2"
+        }
+    ]
+}
